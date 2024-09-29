@@ -1,9 +1,19 @@
 # Musk or Not
 
+## Project Summary
+
+- Trained an Autoencoder for feature reduction and an Artificial Neural Network for 
+binary classification using the reduced feature space.
+
+- Lowered number of features from 166 to 16.
+
+- Achieved an accuracy of 92% on validation set.
+
+
 ## Project Overview
 The goal of this project is to experiment with TensorFlow and combine different neural network models to solve a task. I decided that I would combine an Autoencoder for dimensionality reduction and then use the encoded features in an ANN for the purposes of classification.
 
-AutoEncoders are a type of neural network which are trained to learn to copy the input to the output. It consists of an encoder which encodes or breaks down the input into lower dimension representation, and then has an encoder which decodes the lower dimension representation back to its input. From being used for dimensionality reduction and recommendation systems to denoising images and image colorization, Autoencoders have many interesting applications. 
+AutoEncoders are a type of neural network which are trained to learn to copy the input to the output. It consists of an encoder which encodes or breaks down the input into lower dimension representation, and then has a decoder which decodes the lower dimension representation back to its input. From being used for dimensionality reduction and recommendation systems to denoising images and image colorization, Autoencoders have many interesting applications. 
 
 ***Rationale behind this decision***:
 Dimensionality reduction is important as not only does it reduce computational requirements, but it also can help prevent overfitting and ultimately result in a better performance, as dimensionality reduction aims to extract only the meaningful features from the data.
